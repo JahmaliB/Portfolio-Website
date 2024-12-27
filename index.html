@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Customizes the website tab -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Jah-Mali Brathwaite</span></a>
+        
+        <ul class = "nav-links">
+            <li>
+                <a href="#about"> About</a>
+            </li>
+            <li>
+                <a href="#experience"> Experience</a>
+            </li>
+            <li>
+                <a href="#projects"> Projects</a>
+            </li>
+            <li>
+                <a href="#contact"> Contact</a>
+            </li>
+        </ul>
+
+        <i class="fa-solid fa-bars" id = "menu-icon"></i>
+        <button class="visit-btn">
+            <a href="https://github.com/JahmaliB" target="_blank">Visit GitHub</a>
+        </button>
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="Headshot.JPG" alt="">
+
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Jah-Mali Brathwaite</h1>
+                    <span>Software Developer</span>
+                </div>
+
+                <div class="btn-group">
+                    <div class="btn">
+                        <a href="Jah-Mali Brathwaite Work Resume.pdf" download>Download Resume</a>
+                    </div>
+
+                    <div class="btn">
+                        <a href="mailto:yourname@example.com"> Contact</a>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <a href="https://github.com/JahmaliB" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jah-mali-brathwaite/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2 class = "section-title">Experience</h2>
+        <div class = "experience-info">
+            <div class = "grid">
+                <div class = "grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Software Developer</span>
+                    <h3>4 years</h3>
+                    <p>
+                        Developed games using C++ and C# in Unity, 
+                        focusing on gameplay mechanics 
+                        and user interaction.
+                    </p>
+                </div>
+                
+                <div class = "grid-card">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>Game Developer</span>
+                    <h3>1 years</h3>
+                    <p>
+                        Designed and implemented several projects, 
+                        including games and web applications, 
+                        to sharpen programming and debugging skills.
+                    </p>
+                </div>
+
+                <div class = "grid-card">
+                    <i class="fa-solid fa-palette"></i>
+                    <span>Digital Artist</span>
+                    <h3>5 months</h3>
+                    <p>Creating custom Twitch emotes, refining digital art skills, 
+                        and focusing on designs that enhance streamers' branding
+                        and community engagement.
+                    </p>
+                </div>
+            </div>
+            <img src="Headshot.JPG" alt="">
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class ="section-title"> Recent Projects</h2>
+        <div class = "projects-grid">
+            <div class="project-card">
+                <img src="PacMan.png" alt="">
+                <h3>PacMan Shadow Snackers</h3>
+                <p> 2-Player PacMan Game</p>
+                <div class="btn-group">
+                    <!-- <div class="btn">Live Demo</div> -->
+                    <a href="https://github.com/JahmaliB/pacman-shadow-snackers" target="_blank" class="btn">GitHub Repo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="Wordle.png" class = wordle-pic alt="">
+                <h3>Wordle Clone</h3>
+                <p> Remake of popular New York Times game</p>
+                <div class="btn-group">
+                    <!-- <div class="btn">Live Demo</div> -->
+                    <a href="https://github.com/JahmaliB/Wordle-Clone" target="_blank" class="btn">GitHub Repo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="TTT.png" alt="">
+                <h3>Extended Tic-Tac-Toe</h3>
+                <p> Tic-Tac-Toe game that allows 3 or more people </p>
+                <div class="btn-group">
+                    <!-- <div class="btn">Live Demo</div> -->
+                    <a href="https://github.com/JahmaliB/Extended-Tic-Tac-Toe" target="_blank" class="btn">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- using Formspree API -->
+    <section class="contact" id="contact">
+        <div class="input-box">
+            <h2 class="section-title">Contact Me</h2>
+            
+            <!-- Form to Send Email using Formspree -->
+            <form action="https://formspree.io/f/mdkkkrrk" method="POST">
+                <label for="email">
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                </label>
+
+                <label for="message">
+                    <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+                </label>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <p class="copyright">© All Rights Reserved | Jah-Mali Brathwaite</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
