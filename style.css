@@ -53,6 +53,7 @@ li a{
     position: relative; /* set position to relative to create hover effect */
     color: white;
     font-weight: 300;
+    white-space: nowrap;
 }
 
 /* creates the highlights from hover in the header */
@@ -221,6 +222,57 @@ section{
     margin-bottom: 3rem;
 }
 
+/* About Me Text */
+.me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.me-info {
+    font-weight: bold;
+    font-size: 115%;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+    background: black;
+    text-align: center;
+    border-radius: 3rem;
+    position: relative;
+}
+
+.me-info::after,  .me-info::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(#a020f0, #1e90ff, #a020f0, #1e90ff, #a020f0);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 3rem;
+}
+
+.me-info::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+.me img {
+    width: 25vw;
+    border-radius: 50%; 
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.me-info p {
+    margin: 1rem;
+}
+
 /* Experience Section */
 .experience-info{
     display: flex;
@@ -230,8 +282,9 @@ section{
 }
 
 .experience img{
-    width: 35vw;
+    width: 25vw;
     border-radius: 3rem;
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .grid{
@@ -282,6 +335,7 @@ section{
 ::-webkit-scrollbar {
     width: 20px;
 }
+
 ::-webkit-scrollbar-track {
     background-color: rgb(219, 219, 219);
 }
@@ -296,6 +350,8 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    width: 100%;
+    justify-content: center;
 }
 
 .project-card{
@@ -470,7 +526,6 @@ footer ul li a{
     margin-top: 2rem;
 }
 
-/* Make the  */
 @media(max-width:1280px) {
     header{
         padding: 1rem 2rem;
@@ -487,8 +542,23 @@ footer ul li a{
 
     .experience-info img {
         order: -1; /* Forces the image to appear at the top */
-        width: 70vw;
+        width: 50vw;
         margin-bottom: 2rem;
+    }
+
+    .projects-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    .project-card {
+        flex: 0 0 calc(50% - 2rem); /* 2 items per row for mid-sized screens */
+    }
+
+    .projects-grid .grid-card:nth-child(3) {
+        justify-self: center; /* Center the 3rd card horizontally */
     }
 
     .input-box input{
