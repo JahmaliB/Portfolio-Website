@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
     list-style: none;
 }
 
-body{
+body {
     background-color: #2c2c2c;
     color: white;
 }
@@ -27,12 +27,14 @@ header {
     backdrop-filter: blur(8px);
     color: white;
     padding: 0.5rem 1.5rem;
-    border-radius: 3rem; /*rounded corners*/
-    z-index: 1000; /*make sure header alway in front off everything*/
+    border-radius: 3rem;
+    /*rounded corners*/
+    z-index: 1000;
+    /*make sure header alway in front off everything*/
 }
 
 /* Name in header */
-.logo{
+.logo {
     color: white;
     font-size: 1.3rem;
     font-weight: 600;
@@ -40,24 +42,25 @@ header {
     transition: 0.3s ease-in-out;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.1);
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     gap: 2rem;
 }
 
-li a{
-    position: relative; /* set position to relative to create hover effect */
+li a {
+    position: relative;
+    /* set position to relative to create hover effect */
     color: white;
     font-weight: 300;
     white-space: nowrap;
 }
 
 /* creates the highlights from hover in the header */
-li a::before{
+li a::before {
     position: absolute;
     content: ' ';
     width: 0;
@@ -73,7 +76,7 @@ li a:hover::before {
     width: 100%;
 }
 
-.visit-btn{
+.visit-btn {
     padding: 0.8rem 1.5rem;
     border-radius: 3rem;
     border: none;
@@ -86,11 +89,11 @@ li a:hover::before {
     background: linear-gradient(to right, rgb(30, 144, 255), rgb(160, 32, 240));
 }
 
-.visit-btn a{
+.visit-btn a {
     color: white;
 }
 
-.visit-btn:hover{
+.visit-btn:hover {
     background: linear-gradient(to right, rgb(160, 32, 240), rgb(30, 144, 255));
     transform: scale(1.03);
 }
@@ -101,33 +104,34 @@ li a:hover::before {
     display: none;
 }
 
-section{
+section {
     min-height: 100vh;
     padding: 8rem 12%;
     width: 100%;
-    position: relative; 
+    position: relative;
 }
 
 /* About Section */
-.about{
+.about {
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
 }
 
-.about .about-container{
+.about .about-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10rem;
 }
 
-.about img{
+.about img {
     width: 30vw;
-    border-radius: 50%; /*make img a circle*/
+    border-radius: 50%;
+    /*make img a circle*/
 }
 
-.info-box{
+.info-box {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -136,20 +140,20 @@ section{
     gap: 1.5rem;
 }
 
-.info-box h3{
+.info-box h3 {
     font-size: 1.8rem;
     font-weight: 500;
     opacity: 0.8;
 }
 
-.info-box h1{
+.info-box h1 {
     font-size: 4rem;
     font-weight: 600;
 }
 
 /* Software Developement text */
-.info-box span{
-        /* make text gradint*/
+.info-box span {
+    /* make text gradint*/
     background: linear-gradient(to right, #a020f0, #1e90ff);
     background-clip: text;
     color: transparent;
@@ -158,12 +162,12 @@ section{
 
 }
 
-.btn-group{
+.btn-group {
     display: flex;
     gap: 1rem;
 }
 
-.btn-group a{
+.btn-group a {
     /* Makes text gradient */
     background: linear-gradient(to right, #1e90ff, #a020f0);
     background-clip: text;
@@ -171,7 +175,7 @@ section{
     font-weight: bold;
 }
 
-.btn{
+.btn {
     border-radius: 3rem;
     padding: 0.5rem 1.5rem;
     border: 2px solid black;
@@ -183,19 +187,19 @@ section{
 }
 
 .btn:hover {
-    transform:scale(1.05);
+    transform: scale(1.05);
 }
 
-.btn:hover a{
+.btn:hover a {
     color: black;
 }
 
-.socials{
+.socials {
     display: flex;
     gap: 2rem;
 }
 
-.socials i{
+.socials i {
     background: linear-gradient(to right, #1e90ff, #a020f0);
     background-clip: text;
     color: transparent;
@@ -204,7 +208,7 @@ section{
     transition: 0.2s ease-in-out;
 }
 
-.socials i:hover{
+.socials i:hover {
     background: linear-gradient(to right, #a020f0, #1e90ff);
     background-clip: text;
     color: transparent;
@@ -212,7 +216,8 @@ section{
 }
 
 .socials i:active {
-    transform: scale(0.95); /* Slightly shrink for a click effect */
+    transform: scale(0.95);
+    /* Slightly shrink for a click effect */
 }
 
 .section-title {
@@ -244,7 +249,8 @@ section{
     position: relative;
 }
 
-.me-info::after,  .me-info::before{
+.me-info::after,
+.me-info::before {
     content: '';
     position: absolute;
     height: 100%;
@@ -265,7 +271,7 @@ section{
 
 .me img {
     width: 25vw;
-    border-radius: 50%; 
+    border-radius: 3rem;
     border: 2px solid rgb(255, 255, 255);
 }
 
@@ -274,20 +280,20 @@ section{
 }
 
 /* Experience Section */
-.experience-info{
+.experience-info {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5rem;
 }
 
-.experience img{
+.experience img {
     width: 25vw;
     border-radius: 3rem;
     border: 2px solid rgb(255, 255, 255);
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
@@ -308,18 +314,18 @@ section{
     width: 100%;
 }
 
-.grid-card:hover{
+.grid-card:hover {
     transform: scale(1.10);
     border: 2px solid white;
 }
 
 /*makes icon bigger*/
-.grid-card i{
+.grid-card i {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.grid-card span{
+.grid-card span {
     font-size: 1.5rem;
     font-weight: 500;
     background: linear-gradient(to right, #1e90ff, #a020f0);
@@ -346,7 +352,7 @@ section{
 }
 
 /* Project Section */
-.projects-grid{
+.projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -354,7 +360,7 @@ section{
     justify-content: center;
 }
 
-.project-card{
+.project-card {
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
@@ -369,37 +375,37 @@ section{
     transition: 0.3 ease-in-out;
 }
 
-.project-card img{
+.project-card img {
     width: 20vw;
     border-radius: 1rem;
 }
 
-.project-card .wordle-pic{
+.project-card .wordle-pic {
     width: 100%;
 }
 
-.project-card:hover{
+.project-card:hover {
     background-color: black;
     color: white;
-    border:2px solid white;
+    border: 2px solid white;
     transform: translateY(-10px) scale(1.02);
 }
 
-.project-card .btn-group a{
+.project-card .btn-group a {
     background: linear-gradient(to right, #1e90ff, #a020f0);
     background-clip: text;
-    color:  transparent;
+    color: transparent;
     font-weight: bold;
 
 }
 
-.project-card:hover .btn{
+.project-card:hover .btn {
     background: linear-gradient(to right, #1e90ff, #a020f0);
     border: 2px solid white;
     color: white;
 }
 
-.project-card:hover .btn:hover{
+.project-card:hover .btn:hover {
     border: 2px solid white;
     background-color: white;
     color: black;
@@ -410,13 +416,13 @@ section{
     border: 2px solid white;
 }
 
-.project-card h3{
+.project-card h3 {
     font-size: 2rem;
     font-weight: 500;
 }
 
 /* Contact Me Section */
-.input-box{
+.input-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -426,7 +432,7 @@ section{
     margin-top: 5rem
 }
 
-.input-box input{
+.input-box input {
     border-radius: 3rem;
     border: 2px solid black;
     padding: 2rem 8rem;
@@ -435,7 +441,7 @@ section{
 }
 
 /* Email text message */
-.input-box input::placeholder{
+.input-box input::placeholder {
     font-size: 3rem;
     color: #aaa;
 
@@ -454,9 +460,11 @@ section{
     font-size: 1.8rem;
     width: 100%;
     box-sizing: border-box;
-    resize: none;  /* Prevent resizing */
+    resize: none;
+    /* Prevent resizing */
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    height: 200px; /* Adjust height to make it bigger */
+    height: 200px;
+    /* Adjust height to make it bigger */
     margin-top: 2rem;
 }
 
@@ -475,9 +483,11 @@ section{
 button[type="submit"] {
     background: linear-gradient(to right, #a020f0, #1e90ff);
     color: white;
-    font-size: 2rem; /* Increased for better readability */
+    font-size: 2rem;
+    /* Increased for better readability */
     font-weight: bold;
-    padding: 1.5rem 2.5rem; /* Slightly more padding for prominence */
+    padding: 1.5rem 2.5rem;
+    /* Slightly more padding for prominence */
     border: none;
     border-radius: 3rem;
     cursor: pointer;
@@ -498,7 +508,7 @@ button[type="submit"]:active {
 }
 
 /* Footer */
-footer{
+footer {
     bottom: 0;
     left: 0;
     height: 10rem;
@@ -510,29 +520,29 @@ footer{
     justify-content: center;
 }
 
-footer ul{
+footer ul {
     display: flex;
     align-items: center;
     gap: 3rem;
 }
 
-footer ul li a{
+footer ul li a {
     color: rgb(255, 255, 255);
     font-weight: 600;
 }
 
-.copyright{
+.copyright {
     font-size: 300;
     margin-top: 2rem;
 }
 
 @media(max-width:1280px) {
-    header{
+    header {
         padding: 1rem 2rem;
         gap: 2rem;
     }
 
-    .about .about-container{
+    .about .about-container {
         gap: 3rem;
     }
 
@@ -540,10 +550,15 @@ footer ul li a{
         flex-direction: column;
     }
 
+    .me img {
+        width: 35vw;
+        border-radius: 3rem;
+    }
+
     .experience-info img {
-        order: -1; /* Forces the image to appear at the top */
-        width: 50vw;
-        margin-bottom: 2rem;
+        order: -1;
+        /* Forces the image to appear at the top */
+        width: 25vw;
     }
 
     .projects-grid {
@@ -552,60 +567,69 @@ footer ul li a{
         justify-content: center;
         gap: 2rem;
     }
-    
+
     .project-card {
-        flex: 0 0 calc(50% - 2rem); /* 2 items per row for mid-sized screens */
+        flex: 0 0 calc(50% - 2rem);
+        /* 2 items per row for mid-sized screens */
     }
 
     .projects-grid .grid-card:nth-child(3) {
-        justify-self: center; /* Center the 3rd card horizontally */
+        justify-self: center;
+        /* Center the 3rd card horizontally */
     }
 
-    .input-box input{
+    .input-box input {
         padding: 2rem 5rem;
         font-size: 2.5rem;
     }
-    .input input::placeholder{
+
+    .input input::placeholder {
         font-size: 2.5rem;
     }
-    .input-box i{
+
+    .input-box i {
         font-size: 2.5rem;
     }
 }
 
 @media(max-width:768px) {
-    header{
+    header {
         gap: 1rem;
         padding: 1rem 1rem;
     }
 
-    header .logo{
+    header .logo {
         font-size: 1rem;
     }
 
-    header .visit-btn{
+    header .visit-btn {
         display: none;
     }
 
-    .about-container{
+    .about-container {
         flex-direction: column;
     }
 
-    .input-box input{
+    .input-box input {
         padding: 1rem 2rem;
         font-size: 1.8rem;
     }
 
-    .input-box input::placeholder{
+    .input-box input::placeholder {
         font-size: 1.5rem;
     }
 
-    .input-box i{
+    .input-box i {
         display: none;
     }
 
-    .grid{
-        grid-template-columns: repeat(1,1fr);
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .me img {
+        width: 45vw;
+        border-radius: 3rem;
     }
 
     .experience-info {
@@ -613,8 +637,9 @@ footer ul li a{
     }
 
     .experience-info img {
-        order: -1; /* Forces the image to appear at the top */
-        width: 70vw;
+        order: -1;
+        /* Forces the image to appear at the top */
+        width: 40vw;
     }
 }
 
@@ -622,7 +647,8 @@ footer ul li a{
     header #menu-icon {
         display: block;
     }
-    .nav-links{
+
+    .nav-links {
         position: absolute;
         top: 100%;
         margin-top: 1rem;
@@ -637,34 +663,50 @@ footer ul li a{
         display: none;
     }
 
-    .nav-links li{
+    .nav-links li {
         margin-top: 1.5rem;
         padding: 1rem;
     }
-    .nav-links.active{
+
+    .nav-links.active {
         display: block;
     }
+
     header {
         padding: 1rem 5rem;
         gap: 8rem;
     }
-    header .logo{
+
+    header .logo {
         font-size: 1.5rem;
     }
-    .about-container img{
+
+    .about-container img {
         width: 80vw;
     }
 
-    .input-box input{
+    .me img {
+        width: 40vw;
+        border-radius: 3rem;
+    }
+
+    .experience-info img {
+        order: -1;
+        /* Forces the image to appear at the top */
+        width: 55vw;
+    }
+
+    .input-box input {
         padding: 0.5rem 3rem;
         width: 80%;
         font-size: 1.5rem;
     }
-    
-    .input-box input::placeholder{
+
+    .input-box input::placeholder {
         font-size: 1.5rem;
     }
-    footer ul{
+
+    footer ul {
         gap: 1rem;
     }
 }
